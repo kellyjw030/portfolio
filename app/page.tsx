@@ -14,7 +14,7 @@ export default function Home() {
               <p className="pt-7">
                 My name is Kelly. I am a software developer
                 currently studying Software Engineering 
-                at Singapore Institude of Technology.
+                at Singapore Institute of Technology.
               </p>
               <div className="col-start-1 lg:col-start-2 mt-5">
                 <h2 className="text-2xl font-black pb-4">SKILLS</h2>

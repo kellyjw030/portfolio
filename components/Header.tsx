@@ -88,7 +88,7 @@ const Header: React.FC<HeaderProps> = ({ page }) => {
             <button
               type="button"
               onClick={() => handleCloseMenu()}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-white"
             >
               <span id="menu-icon" className="sr-only">Close menu</span>
               <XMarkIcon aria-hidden="true" className="size-6" />
@@ -98,9 +98,9 @@ const Header: React.FC<HeaderProps> = ({ page }) => {
           <div className="mt-40 mx-5 flex-grow flex justify-start">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="tracking-widest space-y-2 py-6">
-                <Link id="home-mobile" href="/" className="header-text -mx-3 block rounded-lg px-3 py-2  text-xl font-semibold hover:underline hover:underline-offset-8">HOME</Link>
-                <Link id="projects-mobile" href="/projects" className="header-text -mx-3 block rounded-lg px-3 py-2  text-xl font-semibold hover:underline hover:underline-offset-8">PROJECTS</Link>
-                <Link id="about-mobile" href="/about" className="header-text -mx-3 block rounded-lg px-3 py-2  text-xl font-semibold hover:underline hover:underline-offset-8">ABOUT ME</Link>
+                <Link id="home-mobile" href="/" className="header-text text-white -mx-3 block rounded-lg px-3 py-2  text-xl font-semibold hover:underline hover:underline-offset-8">HOME</Link>
+                <Link id="projects-mobile" href="/projects" className="header-text text-white -mx-3 block rounded-lg px-3 py-2  text-xl font-semibold hover:underline hover:underline-offset-8">PROJECTS</Link>
+                <Link id="about-mobile" href="/about" className="header-text text-white -mx-3 block rounded-lg px-3 py-2  text-xl font-semibold hover:underline hover:underline-offset-8">ABOUT ME</Link>
               </div>
             </div>
 
