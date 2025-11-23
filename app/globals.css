@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+:root {
+  --background: #efecf0;
+  --foreground: #3d3c3b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #efecf0;
+    --foreground: #3d3c3b;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+
+
+@keyframes fade-in-anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out-anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fade-in-element{
+  animation: fade-in-anim 0.1s ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.fade-out-element {
+  animation-name: fade-out-anim 0.1s ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes on-load-anim {
+  0% {
+    transform: translateY(-2%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+[class^="on-load-animation"] {
+  animation: on-load-anim var(--animation-duration) ease-in;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.on-load-animation-250 {
+  --animation-duration: 0.25s;
+}
+.on-load-animation-500 {
+  --animation-duration: 0.5s;
+}
+
+.light-text {
+  font-family: var(--font-poppins);
+  font-weight: 300;
+}
+.semibold-text {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+}
+.bold-text {
+  font-family: var(--font-poppins);
+  font-weight: 900;
+}
+
+.link-icon {
+  font-size: 3rem
+}
+
+
+@keyframes expand-width-anim {
+  0% {
+    width: 0%
+  }
+  100% {
+    width: 100%
+  }
+}
+
+.expand-width {
+  animation: expand-width-anim 0.25s ease-in;
+  animation-fill-mode: forwards;
+  width: 0%
+}
+
+@keyframes minimize-width-anim {
+  0% {
+    width: 100%
+  }
+  100% {
+    width: 0%
+  }
+}
+
+.minimize-width {
+  animation: minimize-width-anim 0.25s ease-in;
+  animation-fill-mode: forwards;
+  width: 100%
+}
+
+
+.header-text {
+  font-weight: 300;
+}
+
+  
